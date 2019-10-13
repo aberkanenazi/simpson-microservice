@@ -1,18 +1,26 @@
 package com.esipe.tp.simpsonmicroservice.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "personnages")
 public class Personnage  {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String nom;
     String prenom;
     int age;
+
+    public Personnage() {
+    }
+
+    public Personnage(String nom, String prenom, int age) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.age = age;
+    }
 
     public Long getId() {
         return id;

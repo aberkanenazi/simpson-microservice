@@ -10,11 +10,8 @@ import java.util.Optional;
 
 @Service
 public class PersonnageServiceImpl implements ServiceImpl<Personnage> {
-    private PersonnageRepository personnageRepository;
     @Autowired
-    public PersonnageServiceImpl(PersonnageRepository personnageRepository) {
-        this.personnageRepository = personnageRepository;
-    }
+    private PersonnageRepository personnageRepository;
 
 
     @Override
