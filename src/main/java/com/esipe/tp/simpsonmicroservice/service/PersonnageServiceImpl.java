@@ -15,7 +15,7 @@ public class PersonnageServiceImpl implements ServiceImpl<Personnage> {
 
 
     @Override
-    public Personnage create(Personnage personnage) {
+    public Personnage save(Personnage personnage) {
         return personnageRepository.save(personnage);
     }
 
