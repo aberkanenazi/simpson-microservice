@@ -34,4 +34,12 @@ public class PersonnageServiceImpl implements ServiceImpl<Personnage> {
         personnageRepository.deleteById(id);
     }
 
+    public Personnage UpdateById(long id ,Personnage personnage){
+        Personnage lePersonnage = findById(id).get();
+        lePersonnage.setAge(personnage.getAge());
+        lePersonnage.setNom(personnage.getNom());
+        lePersonnage.setPrenom(personnage.getPrenom());
+        return save(lePersonnage);
+    }
+
 }

@@ -68,5 +68,16 @@ public class PersonnageController {
 
     }
 
+    /**
+     * Cette fonction permet de mettre a jour un personnage avec son id
+     * @param id
+     * @param personnage
+     * @return
+     */
+    @PutMapping(value = "/update/{id}")
+    public Personnage updateById(@PathVariable long id, @RequestBody Personnage personnage) {
+        return personnageService.UpdateById(id,personnage);
+    }
+
 
 }
