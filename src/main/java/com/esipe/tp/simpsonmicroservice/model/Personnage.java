@@ -12,14 +12,16 @@ public class Personnage  {
     String nom;
     String prenom;
     int age;
+    String urlimage;
 
     public Personnage() {
     }
 
-    public Personnage(String nom, String prenom, int age) {
+    public Personnage(String nom, String prenom, int age, String urlimage) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
+        this.urlimage = urlimage;
     }
 
     public Long getId() {
@@ -48,6 +50,14 @@ public class Personnage  {
 
     public int getAge() {
         return age;
+    }
+
+    public String getUrlimage() {
+        return urlimage;
+    }
+
+    public void setUrlImage(String urlimage) {
+        this.urlimage = urlimage;
     }
 
     public void setAge(int age) {

@@ -1,2 +1,3 @@
-insert into personnages (nom,prenom,age)values ('Simpson','Homer',38);
-insert into personnages (nom,prenom,age)values ('Simpson','Marge',38);
+insert into personnages (nom,prenom,age,urlimage)values ('Simpson','Homer',38,'https://images.immediate.co.uk/production/volatile/sites/3/2018/08/Simpsons_SO28_Gallery_11-fb0b632.jpg?quality=45&resize=710,472');
+insert into personnages (nom,prenom,age,urlimage)values ('Simpson','Marge',38,'https://cache.marieclaire.fr/data/photo/w700_c17/138/margeeee.jpg');
+insert into personnages (nom,prenom,age,urlimage)values ('Simpson','Bart',11,'https://anniversaire-celebrite.com/upload/250x333/bart-simpson-250.jpg');
