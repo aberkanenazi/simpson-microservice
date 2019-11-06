@@ -39,6 +39,7 @@ public class PersonnageServiceImpl implements ServiceImpl<Personnage> {
         lePersonnage.setAge(personnage.getAge());
         lePersonnage.setNom(personnage.getNom());
         lePersonnage.setPrenom(personnage.getPrenom());
+        lePersonnage.setUrlImage(personnage.getUrlimage());
         return save(lePersonnage);
     }
 
